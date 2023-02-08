@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Neural Congealing: Supplementary Material</title>
+<link href="./neural_congealing_files/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<button style="position: fixed;right: 15px;top:  80%;height: 60px;width: 110px; font-size: 18px;" type="button"><a href="#top">Back to top</a></button> 
+<div class="container">
+  <h1 align="center">Neural Congealing: Aligning Images to a Joint Semantic Atlas</h1>
+  <h2 align="center">Supplementary Material</h2>
+	
+  <p align="center">&nbsp;</p>
+	<a href="#top"></a>
+  <ul>
+	<li><a href="#congealing-results">Neural Congealing Results (Section 4, Figure 3 and 6)</a></li>
+    <li><a href="#editing-results">Editing Results (Section 4.1, Figures 1 and 5)</a></li>
+	  <li><a href="#videos">Videos</a></li>
+    <li><a href="#limitations">Limitations (Section 5, Figure 9)</a></li>
+  </ul>
+  <p><br><span class="emph">We recommend watching all images in full screen. Click on the images for seeing them in full scale.</span></p>
+	
+  <p>&nbsp;</p>
+  <hr>
+	
+	<h2 align="left"><a name="congealing-results" id="congealing-results"></a>Neural Congealing Results</h2>
+  <p align="left">Sample results on several sets of images (part of which are shown in Fig. 3). We show the input images, input saliency masks (overlay) and congealed results, alongside the average image in atlas space, the atlas saliency and the atlas keys (PCA visualization, channels 2-4). Note the accurate alignment across the sets, even in cases with large variations in appearance, shape, pose and domain.</p>
+   
+<table  width="1200" align="center">
+		<tbody>
+			<th>"Butterflies" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/butterflies/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/butterflies/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/butterflies/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/butterflies/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	
+	 <table  width="1200" align="center">
+		<tbody>
+			<th>"Guitars" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/guitars/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/guitars/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/guitars/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/guitars/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Ducks" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/ducks/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/ducks/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/ducks/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="97" src = "neural_congealing_files/results/ducks/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Mugs" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mugs/congealing_res_grid_orig_sal.png" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/mugs/congealing_res_grid_orig_sal.png"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mugs/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/mugs/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Art Cats" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/unique_cats/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="800" src = "neural_congealing_files/results/unique_cats/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/unique_cats/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="94" src = "neural_congealing_files/results/unique_cats/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+  <table  width="1200" align="center">
+		<tbody>
+			<th>"Mugs2" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mugs2/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/mugs2/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mugs2/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/mugs2/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+			<th>"Mix Animals" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mix_animals/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/mix_animals/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mix_animals/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/mix_animals/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	 <table  width="1200" align="center">
+		<tbody>
+			<th>"Mix Cats" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mix_cats/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/mix_cats/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mix_cats/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="95" src = "neural_congealing_files/results/mix_cats/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Tea Pots" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/kettles/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/kettles/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/kettles/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="87" src = "neural_congealing_files/results/kettles/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Owls" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/owls/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/owls/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/owls/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+				<img width="80" src = "neural_congealing_files/results/owls/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Mix Animals 2" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mix_animals2/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="900" src = "neural_congealing_files/results/mix_animals2/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mix_animals2/atlas_vis/atlas_vis_grid_checkerboard.png"  target="_blank">
+					<img width="95" src = "neural_congealing_files/results/mix_animals2/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+			<th>"Squirrels" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/squirrels/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/results/squirrels/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/squirrels/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="97" src = "neural_congealing_files/results/squirrels/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Baby Animals" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/baby_animals/congealing_res_grid_orig_sal.png" target="_blank">
+					<img width="900" src = "neural_congealing_files/results/baby_animals/congealing_res_grid_orig_sal.png"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/baby_animals/atlas_vis/atlas_vis_grid_checkerboard.png"  target="_blank">
+					<img width="95" src = "neural_congealing_files/results/baby_animals/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"Mugs Subset" Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/results/mug_subset/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="800" src = "neural_congealing_files/results/mug_subset/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/results/mug_subset/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="94" src = "neural_congealing_files/results/mug_subset/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	
+  <p>&nbsp;</p>
+	
+	<h2 align="left"><a name="editing-results" id="editing-results"></a>Editing Results</h2>
+  <p align="left">Once we have the atlas representation, we can use the average image of all congealed images as a template for editing. Then, the edit in the atlas space is automatically propagated back to all original images. One can also apply an edit on one of the images and propagate it to all the rest by passing through the atlas space. Note that the edits are mapped correctly and accurately to the same semantic parts in all images, under significant variation in scale, pose and appearance.</p>
+	
+	<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/butterflies/image_orig_and_annotated_grid_gray.jpg" target="_blank">Butterflies</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			 <tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/butterflies/edits_fade_in_fade_out_gray.mp4" type="video/mp4">
+        </video></th>
+				<th> <a href="neural_congealing_files/edits/butterflies/average_orig_and_annotated_checkerboard_grid.jpg" target="_blank">
+				<img width="180" src = "neural_congealing_files/edits/butterflies/average_orig_and_annotated_checkerboard_grid.jpg"/> </a>
+				</th >
+			</tr>
+			
+		</tbody>
+	</table>
+		<p>&nbsp;</p>
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>"<a href="neural_congealing_files/edits/mugs/image_orig_and_annotated_grid.png" target="_blank">Mugs</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			 <tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/mugs/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				<th> <a href="neural_congealing_files/edits/mugs/average_orig_and_annotated_checkerboard_grid.png" target="_blank">
+				<img width="180" src = "neural_congealing_files/edits/mugs/average_orig_and_annotated_checkerboard_grid.png"/> </a>
+				</th >
+			</tr>
+			
+		</tbody>
+	</table>
+		
+		<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/mix_cats/image_orig_and_annotated_grid.png" target="_blank">Mix Cats</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/mix_cats/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				
+				<th> <a href="neural_congealing_files/edits/mix_cats/average_orig_and_annotated_checkerboard_grid.png"  target="_blank">
+					<img width="180" src = "neural_congealing_files/edits/mix_cats/average_orig_and_annotated_checkerboard_grid.png"/> </a>
+				</th >
+			</tr>
+			
+			
+		</tbody>
+	</table>
+			
+	<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/mugs2/image_orig_and_annotated_grid.png" target="_blank">Mugs2</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/mugs2/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				<th> <a href="neural_congealing_files/edits/mugs2/average_orig_and_annotated_checkerboard_grid.png" target="_blank">
+				<img width="180" src = "neural_congealing_files/edits/mugs2/average_orig_and_annotated_checkerboard_grid.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/mix_animals2/image_orig_and_annotated_grid.jpg" target="_blank">Mix Animals 2</a>" Image Set (eyes in edit taken from <a href="https://github.com/wpeebles/gangealing/tree/main/assets/objects/dog" target="_blank">here</a>)</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/mix_animals2/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				
+				<th> <a href="neural_congealing_files/edits/mix_animals2/average_orig_and_annotated_checkerboard_grid.jpg" target="_blank">
+					<img width="180" src = "neural_congealing_files/edits/mix_animals2/average_orig_and_annotated_checkerboard_grid.jpg"/> </a>
+				</th >
+			</tr>
+			
+			
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			  <th>"<a href="neural_congealing_files/edits/kettles/image_orig_and_annotated_grid.png" target="_blank">Tea Pots</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/kettles/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				
+				<th> <a href="neural_congealing_files/edits/kettles/average_orig_and_annotated_checkerboard_grid.png"  target="_blank">
+					<img width="180" src = "neural_congealing_files/edits/kettles/average_orig_and_annotated_checkerboard_grid.png"/> </a>
+				</th >
+			</tr>
+			
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/ducks/image_orig_and_annotated_grid.jpg" target="_blank">Ducks</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/ducks/edits_fade_in_fade_out_gray.mp4" type="video/mp4">
+        </video></th>
+				
+				<th> <a href="neural_congealing_files/edits/ducks/average_orig_and_annotated_checkerboard_grid.jpg" target="_blank">
+					<img width="180" src = "neural_congealing_files/edits/ducks/average_orig_and_annotated_checkerboard_grid.jpg"/> </a>
+				</th >
+			</tr>
+					
+			
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+			<table  width="1200" align="center">
+		<tbody>
+			<th>"<a href="neural_congealing_files/edits/guitars/image_orig_and_annotated_grid.jpg" target="_blank">Guitars</a>" Image Set</th>
+			<th>Average image in atlas space</th>
+			<tr>
+				 <th align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/edits/guitars/edits_fade_in_fade_out.mp4" type="video/mp4">
+        </video></th>
+				
+				<th> <a href="neural_congealing_files/edits/guitars/average_orig_and_annotated_checkerboard_grid.jpg"  target="_blank">
+					<img width="180" src = "neural_congealing_files/edits/guitars/average_orig_and_annotated_checkerboard_grid.jpg"/> </a>
+				</th >
+			</tr>
+					
+			
+		</tbody>
+	</table>
+	
+	<p>&nbsp;</p>
+	
+	
+	<hr>
+	
+  
+  <h2 align="left"><a name="videos" id="videos"></a>Videos</h2>
+	<p align="left">We train a model on five sampled frames from the video, together with four augmentations for each frame, and use the trained model to obtain the mappings of the rest of the video's frames. We then apply an edit in the atlas space and propagate it to the entire video.</p>
+	<h3 align="center">"Cat"</h3>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>Left to Right: Original Video, Our Result, GANgealing Result <a href="#ref1">[1]</a></th>
+			<tr>
+				 <td align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/videos/cat/input_and_edited_ours_gangealing.mp4" type="video/mp4">
+        </video></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+			<table  width="1200" align="center">
+		<tbody>
+			<th>Our Training Set</th>
+			<th>Our trained average image in atlas space</th>
+			<tr>
+				<th> <a href="neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				<th> <a href="neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="80" src = "neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+				
+	  </tr>
+			
+			
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	
+	<p align="left">For each of the following videos, we choose representative frames in order to train a model, and use the trained model to obtain the mappings of the rest of the video's frames. We then apply an edit in the atlas space and propagate it to the entire video.</p>
+	
+	
+	<h3 align="center">"Wild Cat"</h3>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>Original Video and Our Result</th>
+			<tr>
+				 <td align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/videos/wild_cat/wild_cat_input_and_edited_video.mp4" type="video/mp4">
+        </video></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+			<table  width="1200" align="center">
+		<tbody>
+			<th>Our Training Set</th>
+			<th>Our trained average image in atlas space</th>
+			<tr>
+				<th> <a href="neural_congealing_files/videos/wild_cat/congealing_res_grid_orig_sal.png" target="_blank">
+					<img width="1000" src = "neural_congealing_files/videos/wild_cat/congealing_res_grid_orig_sal.png"/> </a>
+				</th >
+				<th> <a href="neural_congealing_files/videos/wild_cat/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="80" src = "neural_congealing_files/videos/wild_cat/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+				
+	  </tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<h3 align="center">"Dog"</h3>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>Original Video and Our Result (edit taken from <a href="https://github.com/wpeebles/gangealing/tree/main/assets/objects/dog" target="_blank">here</a>)</th>
+			<tr>
+				 <td align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/videos/dog/dog_input_and_edited_video.mp4" type="video/mp4">
+        </video></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+			<table  width="1200" align="center">
+		<tbody>
+			<th>Our Training Set</th>
+			<th>Our trained average image in atlas space</th>
+			<tr>
+				<th> <a href="neural_congealing_files/videos/dog/congealing_res_grid_orig_sal.png" target="_blank">
+					<img width="1000" src = "neural_congealing_files/videos/dog/congealing_res_grid_orig_sal.png"/> </a>
+				</th >
+				<th> <a href="neural_congealing_files/videos/dog/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="80" src = "neural_congealing_files/videos/dog/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+				
+	  </tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<h3 align="center">"Tiger"</h3>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>Original Video and Our Result</th>
+			<tr>
+				 <td align="center"><video width="800" controls autoplay muted loop="loop">
+          <source src="neural_congealing_files/videos/tiger/tiger_input_and_edited_video.mp4" type="video/mp4">
+        </video></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+			<table  width="1200" align="center">
+		<tbody>
+			<th>Our Training Set</th>
+			<th>Our trained average image in atlas space</th>
+			<tr>
+				<th> <a href="neural_congealing_files/videos/tiger/congealing_res_grid_orig_sal.png" target="_blank">
+					<img width="1000" src = "neural_congealing_files/videos/tiger/congealing_res_grid_orig_sal.png"/> </a>
+				</th >
+				<th> <a href="neural_congealing_files/videos/tiger/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="80" src = "neural_congealing_files/videos/tiger/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+				
+	  </tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	<hr>
+	
+  
+  <h2 align="left"><a name="limitations" id="limitations"></a>Limitations</h2>
+  <p align="left">We show examples for limitations of our method (Sec. 5 in the main paper). For each set, we show the original images together with the final alignment, and the atlas visualization (average image in atlas space, atlas saliency and atlas keys (PCA visualization)).</p>
+  
+  
+  <h3>Symmetric Objects under Large Rotations</h3>
+	<p align="left">The following set contains an image with a large rotation relative to the rest of the images, where the common object is symmetric. Since the same semantic parts have similar DINO-ViT features, such cases may converge incorrectly due to symmetry, as in this example, where the left eye and nose of the leftmost image are aligned to the right eye and nose of the rest of the images. </p>
+	<table  width="1000" align="center">
+		<tbody>
+	  <th>Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/limitations/lsun_cats/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="700" src = "neural_congealing_files/limitations/lsun_cats/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/limitations/lsun_cats/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="115" src = "neural_congealing_files/limitations/lsun_cats/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+			
+		</tbody>
+	</table>
+
+	
+	<h3>Multiple Objects</h3>
+	
+	<p align="left">We show examples of two sets where some images contain two instances of the shared mode (two dogs). Notice that in the first set, the multiple object images hold nearly the majority of the set. In contrast, once another image of a single instance is added, the model is able to converge to a single dog in one of the images. In general, our method is not designed to align images depicting more than one instance of the shared mode.</p>
+  <table  width="1000" align="center">
+		<tbody>
+			<th>Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/limitations/multi_objects_n5/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="600" src = "neural_congealing_files/limitations/multi_objects_n5/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/limitations/multi_objects_n5/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="115" src = "neural_congealing_files/limitations/multi_objects_n5/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+  	<table  width="1000" align="center">
+		<tbody>
+			<th>Image Set (input images, input saliencies and congealed images)</th>
+			<th>Atlas visualization</th>
+			<tr>
+				<th> <a href="neural_congealing_files/limitations/multi_objects_n6/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="700" src = "neural_congealing_files/limitations/multi_objects_n6/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				
+				<th> <a href="neural_congealing_files/limitations/multi_objects_n6/atlas_vis/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="115" src = "neural_congealing_files/limitations/multi_objects_n6/atlas_vis/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	
+	
+  <p><br>
+  </p>
+  <p>&nbsp;</p>
+	
+  <p>&nbsp;</p>
+	<h2>References</h2>
+  <p><a name="ref1" id="ref1"></a>[1] William Peebles, Jun-Yan Zhu, Richard Zhang, Antonio Torralba, Alexei Efros and Eli Shechtman. GAN-Supervised Dense Visual Alignment, CVPR 2022. </p>
+
+<p>Code for edit propagation and generating videos is based on the code from <a href="https://github.com/wpeebles/gangealing/blob/main/applications" target="_blank">GANgealing</a>.</p>
+</div>
+
+</body></html>
