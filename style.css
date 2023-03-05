@@ -87,8 +87,8 @@ sup {
 	margin-top: 14px; /* h1 default */
 	margin-bottom: 0px;
 	padding-top: 40px;
-	padding-bottom: 5px;
-	line-height: 1.5em;
+	padding-bottom: 0px;
+	line-height: 1.4em;
 }
 
 table.affiliations {
