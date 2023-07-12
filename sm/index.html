@@ -410,41 +410,7 @@
 	
   
   <h2 align="left"><a name="videos" id="videos"></a>Videos</h2>
-	<p align="left">We train a model on five sampled frames from the video, together with four augmentations for each frame, and use the trained model to obtain the mappings of the rest of the video's frames. We then apply an edit in the atlas space and propagate it to the entire video.</p>
-	<h3 align="center">"Cat"</h3>
-	
-	<table  width="1200" align="center">
-		<tbody>
-	  <th>Left to Right: Original Video, Our Result, GANgealing Result <a href="#ref1">[1]</a></th>
-			<tr>
-				 <td align="center"><video width="800" controls autoplay muted playsinline loop="loop">
-          <source src="neural_congealing_files/videos/cat/input_and_edited_ours_gangealing.mp4" type="video/mp4">
-        </video></td>
-			</tr>
-			
-		</tbody>
-	</table>
-	
-			<table  width="1200" align="center">
-		<tbody>
-			<th>Our Training Set</th>
-			<th>Our trained average image in atlas space</th>
-			<tr>
-				<th> <a href="neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg" target="_blank">
-					<img width="1000" src = "neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg"/> </a>
-				</th >
-				<th> <a href="neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png" target="_blank">
-					<img width="80" src = "neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png"/> </a>
-				</th >
-				
-	  </tr>
-			
-			
-		</tbody>
-	</table>
-	<p>&nbsp;</p>
-	
-	<p align="left">For each of the following videos, we choose representative frames in order to train a model, and use the trained model to obtain the mappings of the rest of the video's frames. We then apply an edit in the atlas space and propagate it to the entire video.</p>
+	<p align="left">For each of the following videos, we choose representative frames in order to train a model, and use the trained model to obtain the mappings of the rest of the video's frames at inference. We then apply an edit in the atlas space and propagate it to the entire video.</p>
 	
 	
 	<h3 align="center">"Wild Cat"</h3>
@@ -537,6 +503,41 @@
 		</tbody>
 	</table>
 	<p>&nbsp;</p>
+
+	<p align="left">Here, we train a model on five sampled frames from the video, together with four augmentations for each frame, and use the trained model to obtain the mappings of the rest of the video's frames. We then apply an edit in the atlas space and propagate it to the entire video.</p>
+	<h3 align="center">"Cat"</h3>
+	
+	<table  width="1200" align="center">
+		<tbody>
+	  <th>Left to Right: Original Video, Our Result, GANgealing Result <a href="#ref1">[1]</a></th>
+			<tr>
+				 <td align="center"><video width="800" controls autoplay muted playsinline loop="loop">
+          <source src="neural_congealing_files/videos/cat/input_and_edited_ours_gangealing.mp4" type="video/mp4">
+        </video></td>
+			</tr>
+			
+		</tbody>
+	</table>
+	
+			<table  width="1200" align="center">
+		<tbody>
+			<th>Our Training Set</th>
+			<th>Our trained average image in atlas space</th>
+			<tr>
+				<th> <a href="neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg" target="_blank">
+					<img width="1000" src = "neural_congealing_files/videos/cat/congealing_res_grid_orig_sal.jpg"/> </a>
+				</th >
+				<th> <a href="neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png" target="_blank">
+					<img width="80" src = "neural_congealing_files/videos/cat/atlas_vis_grid_checkerboard.png"/> </a>
+				</th >
+				
+	  </tr>
+			
+			
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+	
 	<hr>
 	
   
